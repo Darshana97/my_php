@@ -1,32 +1,38 @@
-<form action="post.php" method="POST">
-	Please enter your password:<br><br>
-	<input type="password" name="password">
-	<input type="submit" value="Submit">
-	
-
-
-</form>
-
-
-
 <?php
 
-	$password = 'password';
+	if (isset($_POST['Submit'])) {
+		
+	$yourname = $_POST['username'];
+	$yourpassword = $_POST['password'];
 
-	if (isset($_POST['password']) && !empty($_POST['password'])) {
+	if ($yourname=="darshana" && $yourpassword=="achi") {
 
-		if ($_POST['password']==$password) {
-
-			echo "correct";
-			
-		}
-		else{
-
-			echo "incorrect";
-		}
+	 	echo "Login succesful";
+	 } 
+	 else{
+	 	echo "invalid details";
+	 }
 
 	}
 
 
+ ?>
 
-?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post</title>
+</head>
+<body>
+	<form action="post.php " method="post">
+		Username: <input type="text" name="username"><br><br>
+		Password: <input type="password" name="password"><br><br>
+		<input type="submit" name="Submit">
+
+
+	</form>
+
+
+</body>
+</html>
