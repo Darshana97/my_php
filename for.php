@@ -1,11 +1,24 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For loop</title>
+</head>
+<body>
+	<?php
 
-	for ($num=0; $num <10 ; $num++) { 
+		for ($i=2; $i <=12 ; $i++) {
+			for ($j=1; $j <=12 ; $j++) {
 
-		echo($num);
-		echo'<br>';
-	}
+				echo "$i X $j = ".$i * $j;
+				echo "<br>";
+			}
+			echo "<br><br>";
 
 
+			
+		}
 
-?>
+	 ?>
+
+</body>
+</html>
