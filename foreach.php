@@ -1,38 +1,32 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fore-Each</title>
+</head>
+<body>
+	<?php 
+		$job_categories = array("Accounting","Finance","It","Maketing","Sales");
 
-	/*$names = array('Alex','Billy','Dale');
+		foreach ($job_categories as  $job_category) {
 
-	foreach ($names as $value) {
-
-		echo $value;
-		echo "<br>";
-	}*/
-
-
-
-
-	/*$num = 1;
-	$names = array('Alex','Billy','Dale');
-
-	foreach ($names as  $value) {
+			echo $job_category;
+			echo "<br>";
+		}
 
 
-		echo "name '.$num.' is '.$value.'";
-		echo "<br>";
-	}*/
+	 ?>
 
+	 <br>
+	 <?php 
 
+	 	$student = array("first_name"=>"Darshana","surname"=>"Senevirathna","age"=>22,"grade"=>"University");
 
-	$names = array('Alex'=>21,'Billy'=>16,'Dale'=>49);
+	 	foreach ($student as $label => $mydetails) {
 
-	foreach ($names as $key => $value) {
+	 		echo $label." : ".$mydetails."<br>";
+	 	}
 
-		echo "'.$key.' is '.$value.'";
-		echo "<br>";
-	}
+	  ?>
 
-
-
-
-
-?>
+</body>
+</html>
